@@ -6,10 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Exercise 04 - Form</title>
   </head>
+  <img src="../_assets/html-exercises/html-ex04-form.png" height=300 alt="screenshot of a form">
   <body>
     <main>
       <form action="/submit">
         <!-- Add your code here -->
+        <label for="Name">Name:</label>
+        <input type="text" id="Name" name="Name" placeholder="Full Name" required style="border: none; outline: none">
+        <br>
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" name="Email" placeholder="name@pdx.edu" required style="border: none; outline: none;"><br>
+        <fieldset style="display: inline-block; width: 35%;">
+          <legend>Favorite Character</legend>
+          <input type="radio" id="spongebob" name="character" value="spongebob">
+          <label for="spongebob">Spongebob</label><br>
+          <input type="radio" id="sandy" name="character" value="sandy">
+          <label for="sandy">Sandy</label><br>
+          <input type="radio" id="patrick" name="character" value="patrick">
+          <label for="patrick">Patrick</label><br>
+        </fieldset><br>
+        <fieldset style="display: inline-block; width: 35%;">
+          <legend>Are you a fan of the show?</legend>
+          <input type="checkbox" id="yes" name="fan" value="yes">
+          <label for="yes">Yes, I have watched all episodes!</label><br>
+          <input type="checkbox" id="no" name="fan" value="no">
+          <label for="no">Yes, it's got the best memes.</label>
+        </fieldset><br><br>
+        <button>Submit</button>
+        <button>Reset</button>
       </form>
     </main>
   </body>
