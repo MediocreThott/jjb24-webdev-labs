@@ -2,3 +2,15 @@
   width: 600px;
   margin: 40px auto;
 }
+
+.paragraph::first-letter {
+  font-size: 2em;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.paragraph {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
