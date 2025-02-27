@@ -1,3 +1,16 @@
+.grid-container {
+  display: grid;
+  height: 97vh;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto 2fr  1fr auto;
+  gap: 10px;
+  grid-template-areas:
+    'header header'
+    'aside article' 
+    'section section'
+    'footer footer';
+}
+
 .header {
   grid-area: header;
 }
@@ -6,19 +19,14 @@
   grid-area: article;
 }
 
-.grid-container {
-  display: grid;
-  height: 97vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(8, 1fr);
-  gap: 10px;
-  grid-template-areas:
-    'header'
-    'article'
-    'article'
-    'section'
-    'section'
-    'section'
-    'aside'
-    'footer';
+.aside {
+  grid-area: aside;
+}
+
+.section {
+  grid-area: section;
+}
+
+.footer {
+  grid-area: footer;
 }
