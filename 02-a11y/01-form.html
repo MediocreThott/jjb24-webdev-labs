@@ -7,27 +7,32 @@
     <link rel="stylesheet" href="../_styles/styles.css" />
   </head>
   <body>
-    <h1>01 - Form</h1>
-    <form action="/submit">
-      <label for ="name">Name</label> 
-      <input type="text" alt = "name" id = "name"   />
-      <br /><br />
-      <label for ="email">Email</label>
+    <header>
+      <h1>01 - Form</h1>
+    </header>
+    <main>
+      <form action="/submit">
+        <label for ="name">Name</label> 
+        <input type="text" alt = "name" id = "name"   />
+        <br /><br />
+        <label for ="email">Email</label>
         <input type="text" alt = "email" id = "email" />
-      <br /><br />
-      <span>Favorite Character</span> <br />
-
-    <fieldset style="display: inline-block;">
-      <label for="spongebob">Spongebob</label>
-      <input type="radio" name="character" id="spongebob" /><br />
-      
-      <label for="patrick">Patrick</label>
-      <input type="radio" name="character" id="patrick" /><br />
-      
-      <label for="sandy">Sandy</label>
-      <input type="radio" name="character" id="sandy" /><br />
-      <button>Submit</button>
-    </fieldset>
-    </form>
+        <br /><br />
+        <span>Favorite Character</span> <br />
+        <fieldset style="display: inline-block;">
+          <legend>Character</legend>
+          <label for="spongebob">Spongebob</label>
+          <input type="radio" name="character" id="spongebob" /><br />
+          <label for="patrick">Patrick</label>
+          <input type="radio" name="character" id="patrick" /><br />
+          <label for="sandy">Sandy</label>
+          <input type="radio" name="character" id="sandy" /><br />
+          <button>Submit</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <!-- Footer content can go here -->
+    </footer>
   </body>
 </html>
